@@ -1,3 +1,4 @@
+package Game;
 import java.util.Scanner;
 import java.util.Random;
 public class GameTest {
@@ -6,6 +7,7 @@ public class GameTest {
         Scanner scanner = new Scanner(System.in);
         Game game = new Game();
         System.out.println(" Игра запущена ");
+        System.out.println(" Угадайте число от 1 до 100 ");
         String answer = "да";
             System.out.println(" Первый игрок вводит имя ");
             String name1 = scanner.next();

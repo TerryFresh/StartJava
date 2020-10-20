@@ -1,3 +1,5 @@
+package Calculator;
+
 import java.util.Scanner;
 
 public class CalculatorTest {
@@ -7,7 +9,6 @@ public class CalculatorTest {
 		Scanner scanner = new Scanner(System.in);
 		Calculator calc = new Calculator();
 		System.out.println(" Start ");
-
 		String answer = "y";
 		while(answer.equals("y")){
 

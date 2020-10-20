@@ -1,3 +1,4 @@
+package Game;
 public class Game {	//отвечает за весь игровой процесс
     private int number1;
     private int number2;
@@ -18,7 +19,6 @@ public class Game {	//отвечает за весь игровой процес
         this.name2 = name2;
     }
     public void play() {
-            do {
                 if (number1 < target) {
                     System.out.println(name1 + " указал меньше загадоного значения ");
                 }
@@ -31,12 +31,11 @@ public class Game {	//отвечает за весь игровой процес
                 if (number2 > target) {
                     System.out.println(name2 + " указал больше загаданого значения ");
                 }
-            }while(number1 == target | number2 == target);
-            if (number1 == target) {
-                System.out.println(name1 + " Победитель!!! ");
-            }
-            if (number2 == target) {
-                System.out.println(name2 + " Победитель!!! ");
+                if (number1 == target) {
+                    System.out.println(name1 + " Победитель!!! ");
+                }
+                if (number2 == target) {
+                    System.out.println(name2 + " Победитель!!! ");
             }
         }
     }
